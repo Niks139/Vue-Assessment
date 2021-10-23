@@ -121,7 +121,7 @@ export default {
 
     },
     mounted(){
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
         .then(res=>res.json())
         .then(data=>this.users=data)
         .catch(err=>console.log(err.message))
